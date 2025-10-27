@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: #fff;
+        background-color: #000;
+        font-family: "Inter", sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(325deg, rgb(37, 99, 235) 0%, rgb(249, 115, 22) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
